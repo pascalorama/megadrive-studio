@@ -11,6 +11,9 @@ you can :
 - Step a frame
 - Dump 68k, z80, vram, vsram, ram
 - vdp registers calculator 
+- Support Gens KMOD debugging features 
+	- write to vdp reg #29 to force a code break
+    - write to vdp reg #30 to log a char
 
 # How to compile
 This is an really old program 2005, that means centuries in IT world.
