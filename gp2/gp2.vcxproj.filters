@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e0fae218-8ed7-4193-af0d-cbe4c4cdcbfa}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\emu">
+      <UniqueIdentifier>{75582f94-92b9-428e-9bd7-25feae973c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\m68k">
+      <UniqueIdentifier>{60dfeeeb-056c-46a6-9fd0-df207b540836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sound">
+      <UniqueIdentifier>{91246381-db6b-4979-bd61-e337875009ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpu">
+      <UniqueIdentifier>{dcfd4981-9e83-4166-87b4-43a99c870f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{aa313ea2-3d31-4200-84d4-96f6d60d3061}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0003e945-8cb1-4762-9bf9-70145f0ab813}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="emu\win\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\fileio.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\gen_input.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\gen_io.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\genesis.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\loadrom.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\mem68k.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\membnk.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\memvdp.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\memz80.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\render.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\system.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\vdp.c">
+      <Filter>Source Files\emu</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kcpu.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kdasm.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kopac.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kopdm.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kopnz.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\m68k\m68kops.c">
+      <Filter>Source Files\m68k</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\sound\fm.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\sound\sn76496.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\sound\sound.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="emu\cpu\z80.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="emu\cpu\cpuintrf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\win\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\fileio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\sound\fm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\gen_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\gen_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\genesis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\hcnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\hvc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\loadrom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\m68k\m68kconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\m68k\m68kcpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\m68k\m68kops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\mem68k.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\membnk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\memvdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\memz80.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\win\osd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\cpu\osd_cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\sound\sn76496.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\sound\sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\vcnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\vdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\cpu\z80daa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emu\cpu\z80.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

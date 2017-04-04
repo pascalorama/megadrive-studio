@@ -1,0 +1,45 @@
+#ifndef __mdScreen_H__
+#define __mdScreen_H__
+
+///////////////////////////////////////////////////////////////////////////////
+// Class definition
+///////////////////////////////////////////////////////////////////////////////
+
+class mdDibBitmap;
+class mdVideoAdapter;
+class mdVideoSurface;
+
+class mdScreen: public wxPanel
+{
+	///////////////////////////////////////////////////////////////////////////
+	public:
+	///////
+	
+	mdScreen(	wxWindow* parent,
+				wxWindowID id,									
+				const wxPoint& pos,
+				const wxSize& size,
+				long style,
+				const wxString& name);
+	~mdScreen();
+
+	void SetBitmap(mdDibBitmap *bmp);
+
+	///////////////////////////////////////////////////////////////////////////
+	protected:
+	//////////	
+
+	mdDibBitmap *m_Bitmap;
+	mdVideoSurface *m_Surface;
+		
+	void OnEraseBackground(wxEraseEvent& event);
+	void OnPaint(wxPaintEvent& event);
+
+	int m_Zoom;
+	
+
+	DECLARE_EVENT_TABLE()	
+};
+
+///////////////////////////////////////////////////////////////////////////////
+#endif

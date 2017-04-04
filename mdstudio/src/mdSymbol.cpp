@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+// 
+///////////////////////////////////////////////////////////////////////////////
+// Includes 
+#include "include/mdShared.h"
+#include "include/mdSection.h"
+#include "include/mdSymbol.h"
+
+
+mdSymbol::mdSymbol()
+{	Section=NULL;
+	Address=0;
+	Name=_T("");
+	Displacement=0;
+	UserCreated=true;
+}
+
+mdSymbol::~mdSymbol()
+{
+}

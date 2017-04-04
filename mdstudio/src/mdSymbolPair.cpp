@@ -1,0 +1,20 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+// 
+///////////////////////////////////////////////////////////////////////////////
+// Includes 
+#include "include/mdShared.h"
+#include "include/mdSymbol.h"
+#include "include/mdSymbolPair.h"
+
+mdSymbolPair::mdSymbolPair()
+{
+	Label=NULL;
+	Variable=NULL;
+}
+
+mdSymbolPair::~mdSymbolPair()
+{
+}

@@ -1,0 +1,11 @@
+<< Megadrive Debug >>
+LoadRom Fct loaded
+DisAsm Fct loaded
+InitEmulator Fct loaded
+RunEmulator Fct loaded
+<< start running >>
+518:tst.l   $a10008.l
+522:bne     210
+528:tst.w   $a1000c.l
+532:bne     296
+Press any key to continue

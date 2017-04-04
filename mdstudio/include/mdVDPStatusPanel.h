@@ -1,0 +1,40 @@
+#ifndef __mdVDPStatusPanel_H__
+#define __mdVDPStatusPanel_H__
+
+///////////////////////////////////////////////////////////////////////////////
+// Class definition
+///////////////////////////////////////////////////////////////////////////////
+
+class mdEmu;
+
+class mdVDPStatus: public wxPanel
+{
+	///////////////////////////////////////////////////////////////////////////
+	public:
+	///////
+	
+	mdVDPStatus(	wxWindow* parent,
+					wxWindowID id,									
+					const wxPoint& pos,
+					const wxSize& size,
+					long style,
+					const wxString& name);
+	~mdVDPStatus();
+	void	Update(void);
+	void	Reset(void);
+
+	///////////////////////////////////////////////////////////////////////////
+	protected:
+	//////////	
+	
+	wxListCtrl *m_RegsList;
+	int prev_Regs[24];
+
+	void OnEraseBackground(wxEraseEvent& event);
+	//void OnDoubleClick(wxCommandEvent& event);
+
+	DECLARE_EVENT_TABLE()	
+};
+
+///////////////////////////////////////////////////////////////////////////////
+#endif
